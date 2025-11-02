@@ -1,0 +1,76 @@
+# ===============================================================
+# AutoTrackX .gitignore
+# Maintainer: Dr. Henry Mwaka (ResLab Infrastructure)
+# Purpose: Keep repo clean — ignore build artifacts & local data
+# ===============================================================
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+venv/
+.env/
+env/
+ENV/
+
+# --- Django files ---
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+db.sqlite3-journal
+
+# --- IDE and editor settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Static/media build outputs ---
+staticfiles/
+static/
+media/
+*.tar.gz
+*.zip
+
+# --- Unit test / coverage ---
+.coverage
+.tox/
+.nox/
+pytest_cache/
+htmlcov/
+junitxml/
+coverage.xml
+
+# --- Compiled JavaScript / front-end builds ---
+node_modules/
+build/
+dist/
+*.map
+
+# --- Deployment / CI ---
+*.pid
+*.sock
+celerybeat-schedule
+celerybeat.pid
+*.mo
+
+# --- Backups ---
+*.bak
+*.old
+*.save
+*.orig
+
+# --- Misc ---
+logs/
+tmp/
+*.tmp
+*.temp
